@@ -75,6 +75,7 @@ class User
 
     private function createUser()
     {
+        // Here I convert the object to php array
         $data = json_decode(file_get_contents("php://input"), true);
 
         // Check if the input data is not empty and if the email is valid
@@ -171,22 +172,10 @@ class User
             500 => "Internal Server Error"
         ); 
 
-        if(!empty($array))
-        {
-            $result =
-            [
-                "status" => $code_status,
-                "message" => $status[$code_status]
-            ];
-
-            array_push($result, $array);
-            
-            echo json_encode($result);
-        }
+        if($code_status == 200 && !empty($array))
+            echo json_encode($array);
         else
-        {
             echo json_encode(["status" => $code_status, "message" => $status[$code_status]]);
-        }
     }
 }
 
