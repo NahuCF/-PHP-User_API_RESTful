@@ -1,3 +1,5 @@
+** Importante: ** Este proyecto es extremadamente antiguo y no representa lo que puedo hacer actualmente.
+
 # API RESTful for user managenent #
 
 ## Methods ##
