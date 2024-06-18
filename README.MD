@@ -1,4 +1,4 @@
-**Importante:** Este proyecto es extremadamente antiguo y no representa lo que puedo hacer actualmente.
+**Importante:** Este proyecto es extremadamente antiguo y no es un buen representativo de mis habilidades actuales.
 
 # API RESTful for user managenent #
 
